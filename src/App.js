@@ -4,6 +4,12 @@ import GridSquare from "./components/E-A-S Components/GridSquare";
 import GridSizeBtn from "./components/E-A-S Components/GridSizeBtn";
 
 function App() {
+    function numOfSquares(num) {
+        
+        
+        return( Array(num).fill(<GridSquare />))
+        
+    }
     
 
 return(
@@ -12,28 +18,14 @@ return(
     <div className="btnArea">
             <GridSizeBtn/>
     </div>
-    <div className="stage">        
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
-        <GridSquare/>
+    <div  className="stage">        
+        {numOfSquares(3)}
         
     </div>
 </div>
     
     
 )
+
 }
 export default App;

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+
+function changeBackground(e) {
+    e.target.style.background = 'blue';
+}
 
 const GridSquare = props =>(
-    <div className="square">
+
+    
+
+    <div onMouseOver={changeBackground} className="square">
         
     </div>
 )
