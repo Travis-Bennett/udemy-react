@@ -1,11 +1,25 @@
 import React from "react";
+import { useState } from "react";
 
-const GridSizeBtn = () =>(
-    <div>
-        <h1>Please Enter in the number the size of your art (4 will be a 4x4 grid)</h1>
-        <input type="text" />
-        <button type="submit">Create Grid</button>
-    </div>
-    
-)
+const GridSizeBtn = (props) =>{
+    const [gridSize, setGridSize]= useState("3");
+    const handleSubmit = (event) =>{
+        alert(gridSize);
+        return this.gridSize;
+    }
+        
+    return(
+        <div>
+
+            <form onSubmit={handleSubmit}>
+        
+                <input type="number" 
+                value={gridSize}
+                onChange={(e) => setGridSize(e.target.value)}
+                />
+                <button type="submit">Create Grid</button>
+            </form>
+        </div>
+    )
+}
 export default GridSizeBtn;

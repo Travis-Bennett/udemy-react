@@ -1,17 +1,25 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid black;
+    align-items:center;
+}
+
 .stage{
     display: inline-grid;
-    grid-template-columns: repeat(4, auto);
-    margin: 0%;
+    grid-template-columns: repeat(100 , auto);
+    margin: 1%;
     padding: 0%;
-    border: 2px dashed black;
-    width: 960px;
+    /* border: 2px dashed black; */
+    width: 1000px;
     gap:  1px 1px;
     justify-content: center;
 }
 .square{
-    margin: 1px;
-    height: 1rem;    
-    width: 1rem;
+    margin: .3px;
+    height: .5rem;    
+    width: .5rem;
     background-color: red;
     justify-self: center;
 }
